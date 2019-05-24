@@ -421,6 +421,13 @@
           
 
   
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+      </div>
+    </div>
+
+  
 
 
 
@@ -529,8 +536,10 @@
 
   
 </div>
+<!--
 
   <span class="post-meta-divider">|</span>
+
 
 
   <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
@@ -545,6 +554,7 @@
 
 
 
+-->
 
   <span class="post-meta-divider">|</span>
 
@@ -668,7 +678,45 @@
   
 
   
+  
+  <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
 
+
+<script>
+  var disqus_config = function() {
+    this.page.url = "http://yoursite.com/categories/index.html";
+    this.page.identifier = "categories/index.html";
+    this.page.title = 'categories';
+    };
+  function loadComments() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', '' + +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+  
+    loadComments();
+  
+</script>
+
+
+
+
+
+  
+    <script>
+  window.livereOptions = {
+    refer: 'categories/index.html'
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+</script>
 
   
 
